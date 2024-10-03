@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <title>Il Sapore della Tradizione Italiana</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Aggiunta di Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    <!-- Font Awesome per le icone -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-XXXX" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="styles.css" rel="stylesheet">
 </head>
 <body>
@@ -11,7 +15,7 @@
     <!-- Header -->
     <header>
         <nav>
-            <div class="logo">La Tua Azienda</div>
+            <div class="logo">Sapori Genuini</div>
             <ul>
                 <li><a href="#prodotti">Prodotti</a></li>
                 <li><a href="#chi-siamo">Chi Siamo</a></li>
@@ -34,14 +38,17 @@
         <h2>Perché Sceglierci</h2>
         <div class="benefici-container">
             <div class="beneficio">
+                <i class="fas fa-utensils"></i>
                 <h3>Gusto Autentico</h3>
                 <p>Sapori della cucina tradizionale italiana.</p>
             </div>
             <div class="beneficio">
+                <i class="fas fa-heartbeat"></i>
                 <h3>Nutrizione Bilanciata</h3>
                 <p>Supportato da nutrizionisti e dietologi.</p>
             </div>
             <div class="beneficio">
+                <i class="fas fa-leaf"></i>
                 <h3>Ingredienti Locali</h3>
                 <p>Prodotti a chilometro zero di alta qualità.</p>
             </div>
@@ -54,9 +61,13 @@
         <div class="prodotti-container">
             <!-- Prodotto 1 -->
             <div class="prodotto">
-                <img src="lasagna.jpg" alt="Vellutata di Lasagna">
-                <h3>Vellutata di Lasagna</h3>
-                <p>Il classico piatto italiano in una forma cremosa e deliziosa.</p>
+                <img src="lasagna.jpg" alt="Lasagna Frullata">
+                <h3>Lasagna Frullata</h3>
+                <p>
+                    Scopri la nostra Lasagna Frullata, un piatto genuino che racchiude il sapore autentico della tradizione italiana.
+                    Ideale per chi ha difficoltà di masticazione o deglutizione, senza rinunciare al piacere del buon cibo.
+                    Preparata con ingredienti freschi a km 0, garantisce qualità e sostenibilità in ogni porzione.
+                </p>
                 <a href="#" class="btn">Ordina Ora</a>
             </div>
             <!-- Altri prodotti possono essere aggiunti qui -->
@@ -71,29 +82,42 @@
                 <p>"Un'esperienza culinaria straordinaria che mi ha permesso di rivivere i sapori di un tempo."</p>
                 <h4>- Maria, 68 anni</h4>
             </div>
-            <!-- Altre testimonianze possono essere aggiunte qui -->
+            <div class="testimonianza">
+                <p>"Finalmente posso gustare una lasagna senza alcuna difficoltà. Grazie per aver reso possibile tutto ciò!"</p>
+                <h4>- Giovanni, 75 anni</h4>
+            </div>
         </div>
     </section>
 
     <!-- Sezione Chi Siamo -->
     <section id="chi-siamo" class="chi-siamo">
         <h2>Chi Siamo</h2>
-        <p>La nostra missione è portare il gusto autentico della cucina italiana a tutti, indipendentemente dalle sfide alimentari.</p>
+        <p>
+            La nostra missione è portare il gusto autentico della cucina italiana a tutti, indipendentemente dalle sfide alimentari.
+            Con passione e dedizione, utilizziamo solo ingredienti locali e lavoriamo a stretto contatto con esperti nutrizionisti
+            per garantire pasti bilanciati e deliziosi.
+        </p>
     </section>
 
     <!-- Sezione Contatti -->
     <section id="contatti" class="contatti">
         <h2>Contattaci</h2>
         <p>Telefono: <a href="tel:+391234567890">+39 123 456 7890</a></p>
-        <p>Email: <a href="mailto:info@latuazienda.it">info@latuazienda.it</a></p>
-        <!-- Puoi aggiungere un modulo di contatto qui -->
+        <p>Email: <a href="mailto:info@saporigenuini.it">info@saporigenuini.it</a></p>
+        <!-- Form di Contatto -->
+        <form action="#" method="post" class="contact-form">
+            <input type="text" name="nome" placeholder="Il tuo nome" required>
+            <input type="email" name="email" placeholder="La tua email" required>
+            <textarea name="messaggio" placeholder="Il tuo messaggio" required></textarea>
+            <button type="submit" class="btn">Invia Messaggio</button>
+        </form>
     </section>
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2023 La Tua Azienda. Tutti i diritti riservati.</p>
+        <p>&copy; 2023 Sapori Genuini. Tutti i diritti riservati.</p>
         <div class="social">
-            <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
             <!-- Altre icone social possono essere aggiunte qui -->
         </div>
     </footer>
