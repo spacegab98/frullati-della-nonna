@@ -1,0 +1,246 @@
+/* Stili generali */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+nav .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav li {
+    margin-left: 20px;
+}
+
+nav a {
+    color: #333;
+    font-size: 16px;
+}
+
+/* Sezione Hero */
+.hero {
+    background-image: url('hero-image.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 20px;
+    color: #fff;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    background-color: #e74c3c;
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.btn:hover {
+    background-color: #c0392b;
+}
+
+/* Sezione Benefici */
+.benefici {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.benefici h2 {
+    font-size: 28px;
+    margin-bottom: 40px;
+}
+
+.benefici-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.beneficio {
+    flex: 1 1 300px;
+    margin: 20px;
+}
+
+.beneficio h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+/* Sezione Prodotti */
+.prodotti {
+    background-color: #f9f9f9;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.prodotti h2 {
+    font-size: 28px;
+    margin-bottom: 40px;
+}
+
+.prodotti-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.prodotto {
+    flex: 1 1 300px;
+    background-color: #fff;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.prodotto img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.prodotto h3 {
+    font-size: 22px;
+    margin: 20px 0 10px;
+}
+
+.prodotto p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/* Sezione Testimonianze */
+.testimonianze {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.testimonianze h2 {
+    font-size: 28px;
+    margin-bottom: 40px;
+}
+
+.testimonianze-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.testimonianza {
+    flex: 1 1 300px;
+    margin: 20px;
+    font-style: italic;
+}
+
+.testimonianza h4 {
+    margin-top: 10px;
+    font-weight: normal;
+}
+
+/* Sezione Chi Siamo */
+.chi-siamo {
+    background-color: #f9f9f9;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.chi-siamo h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.chi-siamo p {
+    font-size: 18px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Sezione Contatti */
+.contatti {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.contatti h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.contatti p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer .social a {
+    margin: 0 10px;
+}
+
+footer .social img {
+    width: 24px;
+    height: 24px;
+}
+
+@media (max-width: 768px) {
+    .benefici-container, .prodotti-container, .testimonianze-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav li {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+}
