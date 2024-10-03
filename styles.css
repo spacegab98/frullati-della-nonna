@@ -1,8 +1,9 @@
-/* Stili generali */
+/* Importazione del font Roboto */
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: #333;
+    line-height: 1.6;
 }
 
 a {
@@ -20,6 +21,9 @@ ul {
 header {
     background-color: #fff;
     border-bottom: 1px solid #ddd;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
 }
 
 nav {
@@ -30,8 +34,9 @@ nav {
 }
 
 nav .logo {
-    font-size: 24px;
+    font-size: 28px;
     font-weight: bold;
+    color: #e74c3c;
 }
 
 nav ul {
@@ -45,25 +50,36 @@ nav li {
 nav a {
     color: #333;
     font-size: 16px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #e74c3c;
+}
+
+/* Spazio per evitare che il contenuto si nasconda sotto l'header */
+body {
+    padding-top: 80px;
 }
 
 /* Sezione Hero */
 .hero {
-    background-image: url('hero-image.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('hero-image.jpg');
     background-size: cover;
     background-position: center;
-    padding: 100px 20px;
+    padding: 150px 20px;
     color: #fff;
     text-align: center;
 }
 
 .hero h1 {
-    font-size: 36px;
+    font-size: 48px;
     margin-bottom: 20px;
+    font-weight: bold;
 }
 
 .hero p {
-    font-size: 18px;
+    font-size: 24px;
     margin-bottom: 30px;
 }
 
@@ -71,8 +87,9 @@ nav a {
     background-color: #e74c3c;
     color: #fff;
     padding: 15px 30px;
-    border-radius: 5px;
+    border-radius: 30px;
     font-size: 16px;
+    transition: background-color 0.3s;
 }
 
 .btn:hover {
@@ -86,8 +103,9 @@ nav a {
 }
 
 .benefici h2 {
-    font-size: 28px;
+    font-size: 36px;
     margin-bottom: 40px;
+    color: #e74c3c;
 }
 
 .benefici-container {
@@ -99,11 +117,23 @@ nav a {
 .beneficio {
     flex: 1 1 300px;
     margin: 20px;
+    max-width: 300px;
+}
+
+.beneficio i {
+    font-size: 48px;
+    color: #e74c3c;
+    margin-bottom: 10px;
 }
 
 .beneficio h3 {
-    font-size: 22px;
+    font-size: 24px;
     margin-bottom: 10px;
+}
+
+.beneficio p {
+    font-size: 16px;
+    color: #666;
 }
 
 /* Sezione Prodotti */
@@ -114,8 +144,9 @@ nav a {
 }
 
 .prodotti h2 {
-    font-size: 28px;
+    font-size: 36px;
     margin-bottom: 40px;
+    color: #e74c3c;
 }
 
 .prodotti-container {
@@ -125,28 +156,33 @@ nav a {
 }
 
 .prodotto {
-    flex: 1 1 300px;
+    flex: 1 1 400px;
     background-color: #fff;
     margin: 20px;
     padding: 20px;
     border: 1px solid #ddd;
-    border-radius: 5px;
+    border-radius: 10px;
+    max-width: 400px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 .prodotto img {
     max-width: 100%;
     height: auto;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 .prodotto h3 {
-    font-size: 22px;
+    font-size: 28px;
     margin: 20px 0 10px;
+    color: #333;
 }
 
 .prodotto p {
-    font-size: 16px;
+    font-size: 18px;
     margin-bottom: 20px;
+    color: #666;
+    text-align: left;
 }
 
 /* Sezione Testimonianze */
@@ -156,8 +192,9 @@ nav a {
 }
 
 .testimonianze h2 {
-    font-size: 28px;
+    font-size: 36px;
     margin-bottom: 40px;
+    color: #e74c3c;
 }
 
 .testimonianze-container {
@@ -170,11 +207,18 @@ nav a {
     flex: 1 1 300px;
     margin: 20px;
     font-style: italic;
+    max-width: 500px;
+}
+
+.testimonianza p {
+    font-size: 18px;
+    color: #666;
 }
 
 .testimonianza h4 {
     margin-top: 10px;
     font-weight: normal;
+    color: #333;
 }
 
 /* Sezione Chi Siamo */
@@ -185,14 +229,17 @@ nav a {
 }
 
 .chi-siamo h2 {
-    font-size: 28px;
+    font-size: 36px;
     margin-bottom: 20px;
+    color: #e74c3c;
 }
 
 .chi-siamo p {
-    font-size: 18px;
+    font-size: 20px;
     max-width: 800px;
     margin: 0 auto;
+    color: #666;
+    line-height: 1.8;
 }
 
 /* Sezione Contatti */
@@ -202,13 +249,47 @@ nav a {
 }
 
 .contatti h2 {
-    font-size: 28px;
+    font-size: 36px;
     margin-bottom: 20px;
+    color: #e74c3c;
 }
 
 .contatti p {
-    font-size: 18px;
+    font-size: 20px;
     margin-bottom: 10px;
+    color: #666;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 15px;
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #c0392b;
 }
 
 /* Footer */
@@ -219,17 +300,26 @@ footer {
     text-align: center;
 }
 
-footer .social a {
-    margin: 0 10px;
+footer p {
+    margin: 0;
+    font-size: 16px;
 }
 
-footer .social img {
-    width: 24px;
-    height: 24px;
+footer .social a {
+    margin: 0 10px;
+    color: #fff;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+footer .social a:hover {
+    color: #e74c3c;
 }
 
 @media (max-width: 768px) {
-    .benefici-container, .prodotti-container, .testimonianze-container {
+    .benefici-container,
+    .prodotti-container,
+    .testimonianze-container {
         flex-direction: column;
         align-items: center;
     }
@@ -237,10 +327,46 @@ footer .social img {
     nav ul {
         flex-direction: column;
         align-items: flex-start;
+        background-color: #fff;
+        position: absolute;
+        top: 80px;
+        left: -100%;
+        width: 100%;
+        transition: left 0.3s;
+    }
+
+    nav ul.active {
+        left: 0;
     }
 
     nav li {
-        margin-left: 0;
-        margin-top: 10px;
+        margin: 20px;
+    }
+
+    nav .menu-toggle {
+        display: block;
+        cursor: pointer;
+        font-size: 24px;
+        color: #333;
+    }
+}
+
+/* Aggiunta di stili per il menu mobile */
+nav .menu-toggle {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    nav .menu-toggle {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    nav ul.active {
+        display: flex;
+        flex-direction: column;
     }
 }
