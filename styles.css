@@ -4,8 +4,18 @@ body {
     font-family: 'Roboto', sans-serif;
     color: #333;
     line-height: 1.6;
+    /* Colore di sfondo carta da zucchero */
+    background-color: #a3c1d1;
 }
 
+/* Restanti stili invariati */
+
+/* Aggiornamento del colore dei titoli (manteniamo l'arancione) */
+h1, h2, h3, h4 {
+    color: #e74c3c;
+}
+
+/* Stili generali */
 a {
     text-decoration: none;
     color: inherit;
@@ -105,7 +115,6 @@ body {
 .benefici h2 {
     font-size: 36px;
     margin-bottom: 40px;
-    color: #e74c3c;
 }
 
 .benefici-container {
@@ -146,7 +155,6 @@ body {
 .prodotti h2 {
     font-size: 36px;
     margin-bottom: 40px;
-    color: #e74c3c;
 }
 
 .prodotti-container {
@@ -194,7 +202,6 @@ body {
 .testimonianze h2 {
     font-size: 36px;
     margin-bottom: 40px;
-    color: #e74c3c;
 }
 
 .testimonianze-container {
@@ -231,7 +238,6 @@ body {
 .chi-siamo h2 {
     font-size: 36px;
     margin-bottom: 20px;
-    color: #e74c3c;
 }
 
 .chi-siamo p {
@@ -251,7 +257,6 @@ body {
 .contatti h2 {
     font-size: 36px;
     margin-bottom: 20px;
-    color: #e74c3c;
 }
 
 .contatti p {
