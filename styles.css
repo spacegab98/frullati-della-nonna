@@ -4,13 +4,12 @@ body {
     font-family: 'Roboto', sans-serif;
     color: #333;
     line-height: 1.6;
-    /* Colore di sfondo carta da zucchero */
-    background-color: #a3c1d1;
+    /* Colore di sfondo più chiaro */
+    background-color: #d4e4ec;
+    padding-top: 80px; /* Spazio per evitare che il contenuto si nasconda sotto l'header */
 }
 
-/* Restanti stili invariati */
-
-/* Aggiornamento del colore dei titoli (manteniamo l'arancione) */
+/* Titoli mantengono l'arancione */
 h1, h2, h3, h4 {
     color: #e74c3c;
 }
@@ -65,11 +64,6 @@ nav a {
 
 nav a:hover {
     color: #e74c3c;
-}
-
-/* Spazio per evitare che il contenuto si nasconda sotto l'header */
-body {
-    padding-top: 80px;
 }
 
 /* Sezione Hero */
@@ -172,6 +166,9 @@ body {
     border-radius: 10px;
     max-width: 400px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .prodotto img {
@@ -191,6 +188,12 @@ body {
     margin-bottom: 20px;
     color: #666;
     text-align: left;
+    flex-grow: 1;
+}
+
+.prodotto .btn {
+    align-self: center;
+    margin-top: 20px;
 }
 
 /* Sezione Testimonianze */
@@ -321,6 +324,7 @@ footer .social a:hover {
     color: #e74c3c;
 }
 
+/* Media Queries */
 @media (max-width: 768px) {
     .benefici-container,
     .prodotti-container,
@@ -375,3 +379,4 @@ nav .menu-toggle {
         flex-direction: column;
     }
 }
+
