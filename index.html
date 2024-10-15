@@ -4,31 +4,30 @@
     <meta charset="UTF-8">
     <title>Sapori Genuini - Il Sapore della Tradizione Italiana</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Aggiunta di Google Fonts -->
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
     <!-- Font Awesome per le icone -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-XXXX" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Foglio di stile CSS -->
     <link href="styles.css" rel="stylesheet">
 </head>
 <body>
 
-    <!-- Header -->
+    <!-- Header con logo e menu di navigazione -->
     <header>
-        <!-- Logo in cima alla pagina senza spazio vuoto -->
-        <div class="logo-top">
-            <h1>Sapori Genuini</h1>
+        <div class="header-container">
+            <h1 class="logo">Sapori Genuini</h1>
+            <nav>
+                <ul>
+                    <li><a href="#prodotti">Prodotti</a></li>
+                    <li><a href="#chi-siamo">Chi Siamo</a></li>
+                    <li><a href="#contatti">Contatti</a></li>
+                </ul>
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
         </div>
-        <nav>
-            <!-- Menu di navigazione -->
-            <div class="menu-toggle">
-                <i class="fas fa-bars"></i>
-            </div>
-            <ul>
-                <li><a href="#prodotti">Prodotti</a></li>
-                <li><a href="#chi-siamo">Chi Siamo</a></li>
-                <li><a href="#contatti">Contatti</a></li>
-            </ul>
-        </nav>
     </header>
 
     <!-- Sezione Hero -->
@@ -36,7 +35,7 @@
         <div class="hero-text">
             <h2>Il Sapore della Tradizione Italiana, Senza Compromessi</h2>
             <p>Gusta le tue ricette preferite in una nuova forma.</p>
-            <!-- Il pulsante "Scopri di più" ora rimanda alle sezioni "Pensato per te" e "Più di un frullato" -->
+            <!-- Il pulsante "Scopri di più" rimanda alle sezioni "Pensato per te" e "Più di un frullato" -->
             <a href="#pensato-per-te" class="btn">Scopri di più</a>
         </div>
     </section>
