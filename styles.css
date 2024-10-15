@@ -1,45 +1,39 @@
-/* Importazione del font Roboto */
+/* Stili generali */
 body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
     color: #333;
     line-height: 1.6;
     background-color: #eaf4ea; /* Verde chiaro naturale */
-    padding-top: 0; /* Rimosso lo spazio superiore */
-}
-
-/* Stili per il logo in cima */
-.logo-top {
-    background-color: #eaf4ea;
-    text-align: center;
-    padding: 20px 0;
-}
-
-.logo-top h1 {
-    margin: 0;
-    font-size: 36px;
-    color: #2e8b57; /* Verde scuro per il testo */
 }
 
 /* Header */
 header {
-    background-color: #fff;
-    border-bottom: 1px solid #ddd;
-    position: sticky;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
+    background-color: #eaf4ea; /* Stesso colore dello sfondo */
+    padding: 20px;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 36px;
+    color: #2e8b57; /* Verde scuro */
+    margin: 0;
 }
 
 nav {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 10px 20px;
+    position: relative;
 }
 
 nav ul {
     display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 nav li {
@@ -49,11 +43,17 @@ nav li {
 nav a {
     color: #333;
     font-size: 16px;
+    text-decoration: none;
     transition: color 0.3s;
 }
 
 nav a:hover {
     color: #2e8b57;
+}
+
+/* Menu Toggle per dispositivi mobili */
+.menu-toggle {
+    display: none;
 }
 
 /* Sezione Hero */
@@ -91,6 +91,7 @@ nav a:hover {
     border-radius: 30px;
     font-size: 16px;
     transition: background-color 0.3s;
+    text-decoration: none;
 }
 
 .btn:hover {
@@ -373,34 +374,28 @@ footer .social a:hover {
 
 /* Media Queries */
 @media (max-width: 768px) {
-    .benefici-container,
-    .prodotti-container,
-    .testimonianze-container,
-    .personalizzata .row {
-        flex-direction: column;
-        align-items: center;
+    .header-container {
+        flex-wrap: wrap;
     }
 
-    .personalizzata .col-left,
-    .personalizzata .col-right {
-        flex: 1 1 100%;
-        padding: 0;
-    }
-
-    .personalizzata .col-left,
-    .personalizzata .col-right {
-        padding: 0 20px;
+    .menu-toggle {
+        display: block;
+        cursor: pointer;
+        font-size: 24px;
+        color: #333;
     }
 
     nav ul {
         flex-direction: column;
         align-items: flex-start;
         background-color: #fff;
-        position: absolute;
-        top: 60px;
-        left: -100%;
         width: 100%;
+        position: absolute;
+        top: 70px;
+        left: -100%;
         transition: left 0.3s;
+        padding: 0;
+        margin: 0;
     }
 
     nav ul.active {
@@ -412,27 +407,28 @@ footer .social a:hover {
         margin: 0;
     }
 
-    nav li a {
+    nav a {
         display: block;
         width: 100%;
         padding: 15px 20px;
     }
 
-    nav .menu-toggle {
-        display: block;
-        cursor: pointer;
-        font-size: 24px;
-        color: #333;
-        margin-left: 20px;
+    .personalizzata .col-left,
+    .personalizzata .col-right {
+        flex: 1 1 100%;
+        padding: 0 20px;
+    }
+
+    .benefici-container,
+    .prodotti-container,
+    .testimonianze-container,
+    .personalizzata .row {
+        flex-direction: column;
+        align-items: center;
     }
 }
 
-/* Nascondi il menu toggle su desktop */
-nav .menu-toggle {
-    display: none;
-}
-
-/* Animazioni (se le hai già implementate nel tuo script.js) */
+/* Animazioni (se le hai implementate nel tuo script.js) */
 .hidden {
     opacity: 0;
     transform: translateY(50px);
