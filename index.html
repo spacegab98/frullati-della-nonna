@@ -2,7 +2,7 @@
 <html lang="it">
 <head>
     <meta charset="UTF-8">
-    <title>Il Sapore della Tradizione Italiana</title>
+    <title>Sapori Genuini - Il Sapore della Tradizione Italiana</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Aggiunta di Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
@@ -14,8 +14,15 @@
 
     <!-- Header -->
     <header>
+        <!-- Logo in cima alla pagina senza spazio vuoto -->
+        <div class="logo-top">
+            <h1>Sapori Genuini</h1>
+        </div>
         <nav>
-            <div class="logo">Sapori Genuini</div>
+            <!-- Menu di navigazione -->
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
             <ul>
                 <li><a href="#prodotti">Prodotti</a></li>
                 <li><a href="#chi-siamo">Chi Siamo</a></li>
@@ -27,9 +34,10 @@
     <!-- Sezione Hero -->
     <section class="hero">
         <div class="hero-text">
-            <h1>Il Sapore della Tradizione Italiana, Senza Compromessi</h1>
+            <h2>Il Sapore della Tradizione Italiana, Senza Compromessi</h2>
             <p>Gusta le tue ricette preferite in una nuova forma.</p>
-            <a href="#prodotti" class="btn">Scopri di più</a>
+            <!-- Il pulsante "Scopri di più" ora rimanda alle sezioni "Pensato per te" e "Più di un frullato" -->
+            <a href="#pensato-per-te" class="btn">Scopri di più</a>
         </div>
     </section>
 
@@ -40,17 +48,23 @@
             <div class="beneficio">
                 <i class="fas fa-utensils"></i>
                 <h3>Gusto Autentico</h3>
-                <p>Sapori della cucina tradizionale italiana.</p>
+                <p>
+                    I nostri piatti conservano i sapori autentici della cucina tradizionale italiana, permettendoti di rivivere le emozioni dei pasti in famiglia con ingredienti di prima qualità.
+                </p>
             </div>
             <div class="beneficio">
                 <i class="fas fa-heartbeat"></i>
                 <h3>Nutrizione Bilanciata</h3>
-                <p>Supportato da nutrizionisti e dietologi.</p>
+                <p>
+                    Lavoriamo a stretto contatto con nutrizionisti e dietologi per offrire pasti equilibrati, garantendo il giusto apporto di nutrienti essenziali per il tuo benessere.
+                </p>
             </div>
             <div class="beneficio">
                 <i class="fas fa-leaf"></i>
                 <h3>Ingredienti Locali</h3>
-                <p>Prodotti a chilometro zero di alta qualità.</p>
+                <p>
+                    Utilizziamo solo ingredienti freschi e locali, sostenendo i produttori del territorio e assicurando prodotti a chilometro zero di alta qualità.
+                </p>
             </div>
         </div>
     </section>
@@ -61,7 +75,7 @@
             <!-- Prima Riga -->
             <div class="row">
                 <div class="col-left">
-                    <h2 class="grande-testo">Pensato per te</h2>
+                    <h2 id="pensato-per-te" class="grande-testo">Pensato per te</h2>
                 </div>
                 <div class="col-right">
                     <div class="riquadro">
@@ -81,7 +95,7 @@
                     </div>
                 </div>
                 <div class="col-right">
-                    <h2 class="grande-testo">Più di un frullato</h2>
+                    <h2 id="piu-di-un-frullato" class="grande-testo">Più di un frullato</h2>
                 </div>
             </div>
         </div>
@@ -161,5 +175,8 @@
         </div>
     </footer>
 
+    <!-- Inclusione del file JavaScript -->
+    <script src="script.js"></script>
 </body>
 </html>
+
