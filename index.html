@@ -75,26 +75,28 @@
             <div class="row">
                 <div class="col-left">
                     <h2 id="pensato-per-te" class="grande-testo">Pensato per te</h2>
-                </div>
-                <div class="col-right">
                     <div class="riquadro">
                         <p>
                             I nostri prodotti sono pensati per quelle persone con difficoltà di masticazione o deglutizione che non mangiano più saporito come un tempo. Offriamo piatti genuini e studiati con nutrizionisti, senza bisogno di masticare e che coadiuvano la digestione.
                         </p>
                     </div>
                 </div>
+                <div class="col-right">
+                    <!-- Spazio per equilibrio visivo -->
+                </div>
             </div>
             <!-- Seconda Riga -->
             <div class="row">
                 <div class="col-left">
+                    <!-- Spazio per equilibrio visivo -->
+                </div>
+                <div class="col-right">
+                    <h2 id="piu-di-un-frullato" class="grande-testo">Più di un frullato</h2>
                     <div class="riquadro">
                         <p>
                             Ogni piatto è prodotto con cura artigianale, enfatizzando la ricetta tradizionale e integrando innovazione per rendere il piatto unico nel suo genere.
                         </p>
                     </div>
-                </div>
-                <div class="col-right">
-                    <h2 id="piu-di-un-frullato" class="grande-testo">Più di un frullato</h2>
                 </div>
             </div>
         </div>
@@ -109,9 +111,10 @@
                 <img src="vellutata-lasagna.jpg" alt="Vellutata di Lasagna">
                 <h3>Vellutata di Lasagna</h3>
                 <p>
-                    Riscopri il sapore autentico della tradizione con la nostra Vellutata di Lasagna alla Bolognese. Immagina di gustare tutti gli strati ricchi e saporiti della classica lasagna italiana, trasformati in una vellutata cremosa che conserva intatti i gusti e gli aromi originali. Ideale per chi desidera assaporare un piatto la domenica a pranzo in compagnia della propria famiglia in una forma più accessibile, specialmente se si affrontano difficoltà di masticazione o deglutizione.
+                    Riscopri il sapore autentico della tradizione con la nostra Vellutata di Lasagna alla Bolognese, preparata al momento per garantirti freschezza e gusto senza conservanti.
                 </p>
-                <a href="#" class="btn">Ordina Ora</a>
+                <!-- Pulsante che rimanda al form di ordine -->
+                <a href="#ordine" class="btn">Ordina Ora</a>
             </div>
 
             <!-- Prodotto 2: Vellutata di Scaloppine con Funghi e Patate -->
@@ -119,11 +122,33 @@
                 <img src="vellutata-scaloppine.jpg" alt="Vellutata di Scaloppine con Funghi e Patate">
                 <h3>Vellutata di Scaloppine con Funghi e Patate</h3>
                 <p>
-                    Questo piatto unico combina la tenerezza del vitello con il sapore intenso dei funghi porcini e la delicatezza delle patate, trasformati in una vellutata cremosa. Ideale per chi desidera assaporare i classici della cucina italiana in una forma più accessibile, soprattutto se si hanno difficoltà di masticazione o deglutizione.
+                    Questo piatto unico combina la tenerezza del vitello con il sapore intenso dei funghi porcini e la delicatezza delle patate, preparato sul momento per offrirti un'esperienza culinaria fresca e genuina.
                 </p>
-                <a href="#" class="btn">Ordina Ora</a>
+                <!-- Pulsante che rimanda al form di ordine -->
+                <a href="#ordine" class="btn">Ordina Ora</a>
             </div>
         </div>
+    </section>
+
+    <!-- Sezione Ordine -->
+    <section id="ordine" class="ordine">
+        <h2>Ordina il Tuo Pasto</h2>
+        <p>Compila il modulo sottostante per inviare un'email o chiamaci direttamente per prenotare il tuo pasto fresco e genuino.</p>
+        <!-- Form di Ordine -->
+        <form action="mailto:fem.clienti@gmail.com" method="post" enctype="text/plain" class="order-form">
+            <input type="text" name="nome" placeholder="Il tuo nome" required>
+            <input type="email" name="email" placeholder="La tua email" required>
+            <input type="tel" name="telefono" placeholder="Il tuo numero di telefono" required>
+            <select name="prodotto" required>
+                <option value="">Seleziona il prodotto</option>
+                <option value="Vellutata di Lasagna">Vellutata di Lasagna</option>
+                <option value="Vellutata di Scaloppine">Vellutata di Scaloppine con Funghi e Patate</option>
+            </select>
+            <textarea name="messaggio" placeholder="Note aggiuntive"></textarea>
+            <button type="submit" class="btn">Invia Ordine via Email</button>
+        </form>
+        <!-- Opzione di Chiamata Diretta -->
+        <p>Oppure chiamaci al <a href="tel:+393510304108">351 030 4108</a> per effettuare l'ordine telefonicamente.</p>
     </section>
 
     <!-- Sezione Testimonianze -->
@@ -154,10 +179,10 @@
     <!-- Sezione Contatti -->
     <section id="contatti" class="contatti">
         <h2>Contattaci</h2>
-        <p>Telefono: <a href="tel:+391234567890">+39 123 456 7890</a></p>
-        <p>Email: <a href="mailto:info@saporigenuini.it">info@saporigenuini.it</a></p>
+        <p>Telefono: <a href="tel:+393510304108">351 030 4108</a></p>
+        <p>Email: <a href="mailto:fem.clienti@gmail.com">fem.clienti@gmail.com</a></p>
         <!-- Form di Contatto -->
-        <form action="#" method="post" class="contact-form">
+        <form action="mailto:fem.clienti@gmail.com" method="post" enctype="text/plain" class="contact-form">
             <input type="text" name="nome" placeholder="Il tuo nome" required>
             <input type="email" name="email" placeholder="La tua email" required>
             <textarea name="messaggio" placeholder="Il tuo messaggio" required></textarea>
@@ -178,4 +203,5 @@
     <script src="script.js"></script>
 </body>
 </html>
+
 
