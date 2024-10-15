@@ -292,10 +292,34 @@ nav a:hover {
     background-color: #276749;
 }
 
+/* Sezione Chi Siamo */
+.chi-siamo {
+    padding: 60px 20px;
+    text-align: center;
+    /* Scambio del colore di sfondo */
+    background-color: #f9f9f9;
+}
+
+.chi-siamo h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #2e8b57;
+}
+
+.chi-siamo p {
+    font-size: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #666;
+    line-height: 1.8;
+}
+
 /* Sezione Testimonianze */
 .testimonianze {
     padding: 60px 20px;
     text-align: center;
+    /* Scambio del colore di sfondo */
+    background-color: #eaf4ea; /* Stesso colore dello sfondo generale */
 }
 
 .testimonianze h2 {
@@ -326,27 +350,6 @@ nav a:hover {
     margin-top: 10px;
     font-weight: normal;
     color: #333;
-}
-
-/* Sezione Chi Siamo */
-.chi-siamo {
-    background-color: #f9f9f9;
-    padding: 60px 20px;
-    text-align: center;
-}
-
-.chi-siamo h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
-    color: #2e8b57;
-}
-
-.chi-siamo p {
-    font-size: 20px;
-    max-width: 800px;
-    margin: 0 auto;
-    color: #666;
-    line-height: 1.8;
 }
 
 /* Sezione Contatti */
