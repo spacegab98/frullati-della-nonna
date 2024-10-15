@@ -161,6 +161,9 @@ nav a:hover {
 .personalizzata .col-right {
     flex: 1 1 50%;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .grande-testo {
@@ -168,9 +171,6 @@ nav a:hover {
     font-weight: bold;
     color: #2e8b57;
     margin: 0;
-    display: flex;
-    align-items: center;
-    height: 100%;
 }
 
 .riquadro {
@@ -178,7 +178,7 @@ nav a:hover {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    margin: 20px;
+    margin-top: 20px;
     font-size: 18px;
     color: #666;
 }
@@ -239,6 +239,57 @@ nav a:hover {
 .prodotto .btn {
     align-self: center;
     margin-top: 20px;
+}
+
+/* Sezione Ordine */
+.ordine {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #eaf4ea;
+}
+
+.ordine h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #2e8b57;
+}
+
+.ordine p {
+    font-size: 20px;
+    color: #666;
+}
+
+.order-form {
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.order-form input,
+.order-form select,
+.order-form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.order-form button {
+    width: 100%;
+    padding: 15px;
+    background-color: #2e8b57;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.order-form button:hover {
+    background-color: #276749;
 }
 
 /* Sezione Testimonianze */
