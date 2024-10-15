@@ -4,48 +4,38 @@ body {
     font-family: 'Roboto', sans-serif;
     color: #333;
     line-height: 1.6;
-    /* Colore di sfondo Pastel Turquoise (Pantone) */
-    background-color: #99d5e2;
-    padding-top: 80px; /* Spazio per evitare che il contenuto si nasconda sotto l'header */
+    background-color: #eaf4ea; /* Verde chiaro naturale */
+    padding-top: 0; /* Rimosso lo spazio superiore */
 }
 
-/* Titoli mantengono l'arancione */
-h1, h2, h3, h4 {
-    color: #e74c3c;
+/* Stili per il logo in cima */
+.logo-top {
+    background-color: #eaf4ea;
+    text-align: center;
+    padding: 20px 0;
 }
 
-/* Stili generali */
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-ul {
-    list-style-type: none;
+.logo-top h1 {
     margin: 0;
-    padding: 0;
+    font-size: 36px;
+    color: #2e8b57; /* Verde scuro per il testo */
 }
 
 /* Header */
 header {
     background-color: #fff;
     border-bottom: 1px solid #ddd;
-    position: fixed;
+    position: sticky;
+    top: 0;
     width: 100%;
     z-index: 1000;
 }
 
 nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
-    padding: 20px;
-}
-
-nav .logo {
-    font-size: 28px;
-    font-weight: bold;
-    color: #e74c3c;
+    padding: 10px 20px;
 }
 
 nav ul {
@@ -63,34 +53,39 @@ nav a {
 }
 
 nav a:hover {
-    color: #e74c3c;
+    color: #2e8b57;
 }
 
 /* Sezione Hero */
 .hero {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('hero-image.jpg');
+    background-image: url('hero-image.jpg');
     background-size: cover;
     background-position: center;
-    padding: 150px 20px;
+    padding: 100px 20px;
     color: #fff;
     text-align: center;
 }
 
-.hero h1 {
-    font-size: 48px;
+.hero-text {
+    background-color: rgba(46, 139, 87, 0.7); /* Sovrapposizione verde scuro trasparente */
+    display: inline-block;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.hero h2 {
+    font-size: 42px;
     margin-bottom: 20px;
     font-weight: bold;
-    animation: fadeInDown 1s;
 }
 
 .hero p {
     font-size: 24px;
     margin-bottom: 30px;
-    animation: fadeInUp 1s;
 }
 
 .btn {
-    background-color: #e74c3c;
+    background-color: #2e8b57;
     color: #fff;
     padding: 15px 30px;
     border-radius: 30px;
@@ -99,18 +94,20 @@ nav a:hover {
 }
 
 .btn:hover {
-    background-color: #c0392b;
+    background-color: #276749;
 }
 
 /* Sezione Benefici */
 .benefici {
     padding: 60px 20px;
     text-align: center;
+    background-color: #f0fff0; /* Verde molto chiaro */
 }
 
 .benefici h2 {
     font-size: 36px;
     margin-bottom: 40px;
+    color: #2e8b57;
 }
 
 .benefici-container {
@@ -123,25 +120,11 @@ nav a:hover {
     flex: 1 1 300px;
     margin: 20px;
     max-width: 300px;
-    opacity: 0;
-    animation: fadeIn 1s forwards;
-}
-
-.beneficio:nth-child(1) {
-    animation-delay: 0.2s;
-}
-
-.beneficio:nth-child(2) {
-    animation-delay: 0.4s;
-}
-
-.beneficio:nth-child(3) {
-    animation-delay: 0.6s;
 }
 
 .beneficio i {
     font-size: 48px;
-    color: #e74c3c;
+    color: #2e8b57;
     margin-bottom: 10px;
 }
 
@@ -153,11 +136,13 @@ nav a:hover {
 .beneficio p {
     font-size: 16px;
     color: #666;
+    text-align: left;
 }
 
 /* Sezione Personalizzata */
 .personalizzata {
     padding: 60px 20px;
+    background-color: #eaf4ea; /* Stesso colore dello sfondo generale */
 }
 
 .personalizzata .container {
@@ -180,7 +165,7 @@ nav a:hover {
 .grande-testo {
     font-size: 48px;
     font-weight: bold;
-    color: #333;
+    color: #2e8b57;
     margin: 0;
     display: flex;
     align-items: center;
@@ -197,14 +182,6 @@ nav a:hover {
     color: #666;
 }
 
-.personalizzata .col-left {
-    padding-right: 20px;
-}
-
-.personalizzata .col-right {
-    padding-left: 20px;
-}
-
 /* Sezione Prodotti */
 .prodotti {
     background-color: #f9f9f9;
@@ -215,6 +192,7 @@ nav a:hover {
 .prodotti h2 {
     font-size: 36px;
     margin-bottom: 40px;
+    color: #2e8b57;
 }
 
 .prodotti-container {
@@ -235,17 +213,6 @@ nav a:hover {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    opacity: 0;
-    transform: translateY(50px);
-    animation: fadeInUp 1s forwards;
-}
-
-.prodotto:nth-child(1) {
-    animation-delay: 0.2s;
-}
-
-.prodotto:nth-child(2) {
-    animation-delay: 0.4s;
 }
 
 .prodotto img {
@@ -282,6 +249,7 @@ nav a:hover {
 .testimonianze h2 {
     font-size: 36px;
     margin-bottom: 40px;
+    color: #2e8b57;
 }
 
 .testimonianze-container {
@@ -318,6 +286,7 @@ nav a:hover {
 .chi-siamo h2 {
     font-size: 36px;
     margin-bottom: 20px;
+    color: #2e8b57;
 }
 
 .chi-siamo p {
@@ -337,6 +306,7 @@ nav a:hover {
 .contatti h2 {
     font-size: 36px;
     margin-bottom: 20px;
+    color: #2e8b57;
 }
 
 .contatti p {
@@ -364,7 +334,7 @@ nav a:hover {
 .contact-form button {
     width: 100%;
     padding: 15px;
-    background-color: #e74c3c;
+    background-color: #2e8b57;
     color: #fff;
     border: none;
     border-radius: 30px;
@@ -374,7 +344,7 @@ nav a:hover {
 }
 
 .contact-form button:hover {
-    background-color: #c0392b;
+    background-color: #276749;
 }
 
 /* Footer */
@@ -398,28 +368,7 @@ footer .social a {
 }
 
 footer .social a:hover {
-    color: #e74c3c;
-}
-
-/* Animazioni */
-@keyframes fadeIn {
-    to {
-        opacity: 1;
-    }
-}
-
-@keyframes fadeInUp {
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes fadeInDown {
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+    color: #2e8b57;
 }
 
 /* Media Queries */
@@ -448,7 +397,7 @@ footer .social a:hover {
         align-items: flex-start;
         background-color: #fff;
         position: absolute;
-        top: 80px;
+        top: 60px;
         left: -100%;
         width: 100%;
         transition: left 0.3s;
@@ -459,7 +408,14 @@ footer .social a:hover {
     }
 
     nav li {
-        margin: 20px;
+        width: 100%;
+        margin: 0;
+    }
+
+    nav li a {
+        display: block;
+        width: 100%;
+        padding: 15px 20px;
     }
 
     nav .menu-toggle {
@@ -467,25 +423,23 @@ footer .social a:hover {
         cursor: pointer;
         font-size: 24px;
         color: #333;
+        margin-left: 20px;
     }
 }
 
-/* Aggiunta di stili per il menu mobile */
+/* Nascondi il menu toggle su desktop */
 nav .menu-toggle {
     display: none;
 }
 
-@media (max-width: 768px) {
-    nav .menu-toggle {
-        display: block;
-    }
+/* Animazioni (se le hai già implementate nel tuo script.js) */
+.hidden {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.5s ease-out;
+}
 
-    nav ul {
-        display: none;
-    }
-
-    nav ul.active {
-        display: flex;
-        flex-direction: column;
-    }
+.show {
+    opacity: 1;
+    transform: translateY(0);
 }
