@@ -35,12 +35,55 @@
         <div class="hero-text">
             <h2>Il Sapore della Tradizione Italiana, Senza Compromessi</h2>
             <p>Gusta le tue ricette preferite in una nuova forma.</p>
-            <!-- Il pulsante "Scopri di più" rimanda alle sezioni "Pensato per te" e "Più di un frullato" -->
             <a href="#pensato-per-te" class="btn">Scopri di più</a>
         </div>
     </section>
 
-    <!-- Sezione Benefici -->
+    <!-- Sezione Chi Siamo (ORA al posto di Perché Sceglierci) -->
+    <section id="chi-siamo" class="chi-siamo">
+        <h2>Chi Siamo</h2>
+        <p>
+            La nostra missione è portare il gusto autentico della cucina italiana a tutti, indipendentemente dalle sfide alimentari.
+            Con passione e dedizione, utilizziamo solo ingredienti locali e lavoriamo a stretto contatto con esperti nutrizionisti
+            per garantire pasti bilanciati e deliziosi.
+        </p>
+    </section>
+
+    <!-- Sezione Personalizzata (Pensato per te e Più di un frullato) -->
+    <section class="personalizzata">
+        <div class="container">
+            <!-- Prima Riga: Pensato per te -->
+            <div class="row">
+                <div class="col-left">
+                    <h2 id="pensato-per-te" class="grande-testo">Pensato per te</h2>
+                    <div class="riquadro">
+                        <p>
+                            I nostri prodotti sono pensati per quelle persone con difficoltà di masticazione o deglutizione che non mangiano più saporito come un tempo. Offriamo piatti genuini e studiati con nutrizionisti, senza bisogno di masticare e che coadiuvano la digestione.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-right">
+                    <!-- Spazio per equilibrio visivo -->
+                </div>
+            </div>
+            <!-- Seconda Riga: Più di un frullato -->
+            <div class="row">
+                <div class="col-left">
+                    <!-- Spazio per equilibrio visivo -->
+                </div>
+                <div class="col-right">
+                    <h2 id="piu-di-un-frullato" class="grande-testo">Più di un frullato</h2>
+                    <div class="riquadro">
+                        <p>
+                            Ogni piatto è prodotto con cura artigianale, enfatizzando la ricetta tradizionale e integrando innovazione per rendere il piatto unico nel suo genere.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sezione Benefici (Perché Sceglierci) SPOSTATA DOPO Pensato per te e Più di un frullato -->
     <section class="benefici">
         <h2>Perché Sceglierci</h2>
         <div class="benefici-container">
@@ -68,63 +111,27 @@
         </div>
     </section>
 
-    <!-- Sezione Personalizzata -->
-    <section class="personalizzata">
-        <div class="container">
-            <!-- Prima Riga -->
-            <div class="row">
-                <div class="col-left">
-                    <h2 id="pensato-per-te" class="grande-testo">Pensato per te</h2>
-                    <div class="riquadro">
-                        <p>
-                            I nostri prodotti sono pensati per quelle persone con difficoltà di masticazione o deglutizione che non mangiano più saporito come un tempo. Offriamo piatti genuini e studiati con nutrizionisti, senza bisogno di masticare e che coadiuvano la digestione.
-                        </p>
-                    </div>
-                </div>
-                <div class="col-right">
-                    <!-- Spazio per equilibrio visivo -->
-                </div>
-            </div>
-            <!-- Seconda Riga -->
-            <div class="row">
-                <div class="col-left">
-                    <!-- Spazio per equilibrio visivo -->
-                </div>
-                <div class="col-right">
-                    <h2 id="piu-di-un-frullato" class="grande-testo">Più di un frullato</h2>
-                    <div class="riquadro">
-                        <p>
-                            Ogni piatto è prodotto con cura artigianale, enfatizzando la ricetta tradizionale e integrando innovazione per rendere il piatto unico nel suo genere.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Sezione Prodotti -->
     <section id="prodotti" class="prodotti">
         <h2>I Nostri Prodotti</h2>
         <div class="prodotti-container">
-            <!-- Prodotto 1: Vellutata di Lasagna -->
+            <!-- Vellutata di Lasagna -->
             <div class="prodotto">
                 <img src="vellutata-lasagna.jpg" alt="Vellutata di Lasagna">
                 <h3>Vellutata di Lasagna</h3>
                 <p>
                     Riscopri il sapore autentico della tradizione con la nostra Vellutata di Lasagna alla Bolognese. Immagina di gustare tutti gli strati ricchi e saporiti della classica lasagna italiana, trasformati in una vellutata cremosa che conserva intatti i gusti e gli aromi originali. Ideale per chi desidera assaporare un piatto la domenica a pranzo in compagnia della propria famiglia in una forma più accessibile, specialmente se si affrontano difficoltà di masticazione o deglutizione.
                 </p>
-                <!-- Pulsante che rimanda al form di ordine -->
                 <a href="#ordine" class="btn">Ordina Ora</a>
             </div>
 
-            <!-- Prodotto 2: Vellutata di Scaloppine con Funghi e Patate -->
+            <!-- Vellutata di Scaloppine -->
             <div class="prodotto">
                 <img src="vellutata-scaloppine.jpg" alt="Vellutata di Scaloppine con Funghi e Patate">
                 <h3>Vellutata di Scaloppine con Funghi e Patate</h3>
                 <p>
                     Questo piatto unico combina la tenerezza del vitello con il sapore intenso dei funghi porcini e la delicatezza delle patate, trasformati in una vellutata cremosa. Ideale per chi desidera assaporare i classici della cucina italiana in una forma più accessibile, soprattutto se si hanno difficoltà di masticazione o deglutizione.
                 </p>
-                <!-- Pulsante che rimanda al form di ordine -->
                 <a href="#ordine" class="btn">Ordina Ora</a>
             </div>
         </div>
@@ -134,7 +141,6 @@
     <section id="ordine" class="ordine">
         <h2>Ordina il Tuo Pasto</h2>
         <p>Compila il modulo sottostante per inviare un'email o chiamaci direttamente per prenotare il tuo pasto fresco e genuino.</p>
-        <!-- Form di Ordine -->
         <form action="mailto:fem.clienti@gmail.com" method="post" enctype="text/plain" class="order-form">
             <input type="text" name="nome" placeholder="Il tuo nome" required>
             <input type="email" name="email" placeholder="La tua email" required>
@@ -147,18 +153,7 @@
             <textarea name="messaggio" placeholder="Note aggiuntive"></textarea>
             <button type="submit" class="btn">Invia Ordine via Email</button>
         </form>
-        <!-- Opzione di Chiamata Diretta -->
         <p>Oppure chiamaci al <a href="tel:+393510304108">351 030 4108</a> per effettuare l'ordine telefonicamente.</p>
-    </section>
-
-    <!-- Sezione Chi Siamo -->
-    <section id="chi-siamo" class="chi-siamo">
-        <h2>Chi Siamo</h2>
-        <p>
-            La nostra missione è portare il gusto autentico della cucina italiana a tutti, indipendentemente dalle sfide alimentari.
-            Con passione e dedizione, utilizziamo solo ingredienti locali e lavoriamo a stretto contatto con esperti nutrizionisti
-            per garantire pasti bilanciati e deliziosi.
-        </p>
     </section>
 
     <!-- Sezione Testimonianze -->
@@ -181,7 +176,6 @@
         <h2>Contattaci</h2>
         <p>Telefono: <a href="tel:+393510304108">351 030 4108</a></p>
         <p>Email: <a href="mailto:fem.clienti@gmail.com">fem.clienti@gmail.com</a></p>
-        <!-- Form di Contatto -->
         <form action="mailto:fem.clienti@gmail.com" method="post" enctype="text/plain" class="contact-form">
             <input type="text" name="nome" placeholder="Il tuo nome" required>
             <input type="email" name="email" placeholder="La tua email" required>
@@ -195,7 +189,6 @@
         <p>&copy; 2023 Sapori Genuini. Tutti i diritti riservati.</p>
         <div class="social">
             <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <!-- Altre icone social possono essere aggiunte qui -->
         </div>
     </footer>
 
