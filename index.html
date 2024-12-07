@@ -4,16 +4,11 @@
     <meta charset="UTF-8">
     <title>Sapori Genuini - Il Sapore della Tradizione Italiana</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
-    <!-- Font Awesome per le icone -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-XXXX" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- Foglio di stile CSS -->
     <link href="styles.css" rel="stylesheet">
 </head>
 <body>
-
-    <!-- Header con logo e menu di navigazione -->
     <header>
         <div class="header-container">
             <h1 class="logo">Sapori Genuini</h1>
@@ -30,7 +25,7 @@
         </div>
     </header>
 
-    <!-- Sezione Hero -->
+    <!-- Hero -->
     <section class="hero">
         <div class="hero-text">
             <h2>Il Sapore della Tradizione Italiana, Senza Compromessi</h2>
@@ -39,8 +34,8 @@
         </div>
     </section>
 
-    <!-- Sezione Chi Siamo (ORA al posto di Perché Sceglierci) -->
-    <section id="chi-siamo" class="chi-siamo">
+    <!-- Chi Siamo (ora al posto di Perché Sceglierci, ma con classe .benefici per i vecchi colori) -->
+    <section id="chi-siamo" class="benefici">
         <h2>Chi Siamo</h2>
         <p>
             La nostra missione è portare il gusto autentico della cucina italiana a tutti, indipendentemente dalle sfide alimentari.
@@ -49,10 +44,9 @@
         </p>
     </section>
 
-    <!-- Sezione Personalizzata (Pensato per te e Più di un frullato) -->
+    <!-- Personalizzata (Pensato per te e Più di un frullato) -->
     <section class="personalizzata">
         <div class="container">
-            <!-- Prima Riga: Pensato per te -->
             <div class="row">
                 <div class="col-left">
                     <h2 id="pensato-per-te" class="grande-testo">Pensato per te</h2>
@@ -62,15 +56,10 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-right">
-                    <!-- Spazio per equilibrio visivo -->
-                </div>
+                <div class="col-right"></div>
             </div>
-            <!-- Seconda Riga: Più di un frullato -->
             <div class="row">
-                <div class="col-left">
-                    <!-- Spazio per equilibrio visivo -->
-                </div>
+                <div class="col-left"></div>
                 <div class="col-right">
                     <h2 id="piu-di-un-frullato" class="grande-testo">Più di un frullato</h2>
                     <div class="riquadro">
@@ -83,7 +72,7 @@
         </div>
     </section>
 
-    <!-- Sezione Benefici (Perché Sceglierci) SPOSTATA DOPO Pensato per te e Più di un frullato -->
+    <!-- Perché Sceglierci (ora dopo la Personalizzata, mantiene la classe benefici per colori originali) -->
     <section class="benefici">
         <h2>Perché Sceglierci</h2>
         <div class="benefici-container">
@@ -111,11 +100,10 @@
         </div>
     </section>
 
-    <!-- Sezione Prodotti -->
+    <!-- Prodotti -->
     <section id="prodotti" class="prodotti">
         <h2>I Nostri Prodotti</h2>
         <div class="prodotti-container">
-            <!-- Vellutata di Lasagna -->
             <div class="prodotto">
                 <img src="vellutata-lasagna.jpg" alt="Vellutata di Lasagna">
                 <h3>Vellutata di Lasagna</h3>
@@ -124,8 +112,6 @@
                 </p>
                 <a href="#ordine" class="btn">Ordina Ora</a>
             </div>
-
-            <!-- Vellutata di Scaloppine -->
             <div class="prodotto">
                 <img src="vellutata-scaloppine.jpg" alt="Vellutata di Scaloppine con Funghi e Patate">
                 <h3>Vellutata di Scaloppine con Funghi e Patate</h3>
@@ -137,7 +123,7 @@
         </div>
     </section>
 
-    <!-- Sezione Ordine -->
+    <!-- Ordine -->
     <section id="ordine" class="ordine">
         <h2>Ordina il Tuo Pasto</h2>
         <p>Compila il modulo sottostante per inviare un'email o chiamaci direttamente per prenotare il tuo pasto fresco e genuino.</p>
@@ -156,43 +142,6 @@
         <p>Oppure chiamaci al <a href="tel:+393510304108">351 030 4108</a> per effettuare l'ordine telefonicamente.</p>
     </section>
 
-    <!-- Sezione Testimonianze -->
+    <!-- Testimonianze -->
     <section class="testimonianze">
-        <h2>Cosa Dicono di Noi</h2>
-        <div class="testimonianze-container">
-            <div class="testimonianza">
-                <p>"Un'esperienza culinaria straordinaria che mi ha permesso di rivivere i sapori di un tempo."</p>
-                <h4>- Maria, 68 anni</h4>
-            </div>
-            <div class="testimonianza">
-                <p>"Finalmente posso gustare una lasagna senza alcuna difficoltà. Grazie per aver reso possibile tutto ciò!"</p>
-                <h4>- Giovanni, 75 anni</h4>
-            </div>
-        </div>
-    </section>
-
-    <!-- Sezione Contatti -->
-    <section id="contatti" class="contatti">
-        <h2>Contattaci</h2>
-        <p>Telefono: <a href="tel:+393510304108">351 030 4108</a></p>
-        <p>Email: <a href="mailto:fem.clienti@gmail.com">fem.clienti@gmail.com</a></p>
-        <form action="mailto:fem.clienti@gmail.com" method="post" enctype="text/plain" class="contact-form">
-            <input type="text" name="nome" placeholder="Il tuo nome" required>
-            <input type="email" name="email" placeholder="La tua email" required>
-            <textarea name="messaggio" placeholder="Il tuo messaggio" required></textarea>
-            <button type="submit" class="btn">Invia Messaggio</button>
-        </form>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2023 Sapori Genuini. Tutti i diritti riservati.</p>
-        <div class="social">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-        </div>
-    </footer>
-
-    <!-- Inclusione del file JavaScript -->
-    <script src="script.js"></script>
-</body>
-</html>
+        <h2>Cosa Dicono
