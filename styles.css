@@ -1,4 +1,3 @@
-/* Stili generali */
 body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
@@ -7,80 +6,40 @@ body {
     background-color: #eaf4ea; /* Verde chiaro naturale */
 }
 
-/* Header */
-header {
-    background-color: #eaf4ea; /* Stesso colore dello sfondo */
-    padding: 20px;
-}
-
-.header-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.logo {
-    font-size: 36px;
+h1, h2, h3 {
     color: #2e8b57; /* Verde scuro */
-    margin: 0;
 }
 
-nav {
-    position: relative;
-}
-
-nav ul {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-nav li {
-    margin-left: 20px;
-}
-
-nav a {
-    color: #333;
-    font-size: 16px;
+a {
     text-decoration: none;
-    transition: color 0.3s;
+    color: inherit;
 }
 
-nav a:hover {
-    color: #2e8b57;
-}
-
-/* Menu Toggle per dispositivi mobili */
-.menu-toggle {
-    display: none;
-}
-
-/* Sezione Hero */
+/* Header / Hero */
 .hero {
-    background-image: url('hero-image.jpg');
+    background-image: url('hero-image.jpg'); /* Immagine di sfondo */
     background-size: cover;
     background-position: center;
     padding: 100px 20px;
-    color: #fff;
     text-align: center;
 }
 
 .hero-text {
-    background-color: rgba(46, 139, 87, 0.7); /* Sovrapposizione verde scuro trasparente */
+    background-color: rgba(46, 139, 87, 0.7);
     display: inline-block;
     padding: 20px;
     border-radius: 10px;
+    color: #fff;
 }
 
-.hero h2 {
+.hero h1 {
     font-size: 42px;
     margin-bottom: 20px;
     font-weight: bold;
 }
 
 .hero p {
-    font-size: 24px;
+    font-size: 20px;
     margin-bottom: 30px;
 }
 
@@ -91,99 +50,113 @@ nav a:hover {
     border-radius: 30px;
     font-size: 16px;
     transition: background-color 0.3s;
-    text-decoration: none;
+    display: inline-block;
 }
 
 .btn:hover {
     background-color: #276749;
 }
 
-/* Sezione Benefici */
-.benefici {
+/* Problema e Soluzione */
+.problema-soluzione {
+    background-color: #f9f9f9;
+    padding: 60px 20px;
+}
+
+.problema-soluzione .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.problema-soluzione .testo {
+    flex: 1 1 500px;
+    margin-right: 40px;
+}
+
+.problema-soluzione .testo h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.problema-soluzione .testo p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.problema-soluzione ul {
+    list-style: none;
+    padding: 0;
+}
+
+.problema-soluzione ul li {
+    font-size: 18px;
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 25px;
+}
+
+.problema-soluzione ul li::before {
+    content: "✔";
+    color: #2e8b57;
+    position: absolute;
+    left: 0;
+}
+
+.problema-soluzione .immagini {
+    flex: 1 1 400px;
+}
+
+.problema-soluzione .immagini img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* Benefici per Anziani */
+.benefici-anziani {
+    background-color: #f0fff0; /* verde molto chiaro */
     padding: 60px 20px;
     text-align: center;
-    background-color: #f0fff0; /* Verde molto chiaro */
 }
 
-.benefici h2 {
-    font-size: 36px;
-    margin-bottom: 40px;
-    color: #2e8b57;
-}
-
-.benefici-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.beneficio {
-    flex: 1 1 300px;
-    margin: 20px;
-    max-width: 300px;
-}
-
-.beneficio i {
-    font-size: 48px;
-    color: #2e8b57;
-    margin-bottom: 10px;
-}
-
-.beneficio h3 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-.beneficio p {
-    font-size: 16px;
-    color: #666;
-    text-align: left;
-}
-
-/* Sezione Personalizzata */
-.personalizzata {
-    padding: 60px 20px;
-    background-color: #eaf4ea; /* Stesso colore dello sfondo generale */
-}
-
-.personalizzata .container {
+.benefici-anziani .container {
     max-width: 1200px;
     margin: 0 auto;
 }
 
-.personalizzata .row {
-    display: flex;
-    flex-wrap: wrap;
+.benefici-anziani h2 {
+    font-size: 32px;
     margin-bottom: 40px;
 }
 
-.personalizzata .col-left,
-.personalizzata .col-right {
-    flex: 1 1 50%;
-    box-sizing: border-box;
+.benefici-lista {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
+    margin-bottom: 40px;
 }
 
-.grande-testo {
-    font-size: 48px;
-    font-weight: bold;
-    color: #2e8b57;
-    margin: 0;
-}
-
-.riquadro {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    margin-top: 20px;
+.beneficio {
+    display: flex;
+    align-items: center;
+    margin: 10px 20px;
     font-size: 18px;
-    color: #666;
 }
 
-/* Sezione Prodotti */
+.beneficio i {
+    color: #2e8b57;
+    margin-right: 10px;
+}
+
+.img-small {
+    max-width: 100px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+/* Prodotti */
 .prodotti {
     background-color: #f9f9f9;
     padding: 60px 20px;
@@ -193,7 +166,6 @@ nav a:hover {
 .prodotti h2 {
     font-size: 36px;
     margin-bottom: 40px;
-    color: #2e8b57;
 }
 
 .prodotti-container {
@@ -203,17 +175,16 @@ nav a:hover {
 }
 
 .prodotto {
-    flex: 1 1 400px;
     background-color: #fff;
     margin: 20px;
     padding: 20px;
-    border: 1px solid #ddd;
     border-radius: 10px;
     max-width: 400px;
+    border: 1px solid #ddd;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    text-align: left;
 }
 
 .prodotto img {
@@ -223,136 +194,23 @@ nav a:hover {
 }
 
 .prodotto h3 {
-    font-size: 28px;
     margin: 20px 0 10px;
+    font-size: 24px;
     color: #333;
 }
 
 .prodotto p {
-    font-size: 18px;
+    font-size: 16px;
     margin-bottom: 20px;
     color: #666;
-    text-align: left;
     flex-grow: 1;
 }
 
 .prodotto .btn {
     align-self: center;
-    margin-top: 20px;
 }
 
-/* Sezione Ordine */
-.ordine {
-    padding: 60px 20px;
-    text-align: center;
-    background-color: #eaf4ea;
-}
-
-.ordine h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
-    color: #2e8b57;
-}
-
-.ordine p {
-    font-size: 20px;
-    color: #666;
-}
-
-.order-form {
-    max-width: 600px;
-    margin: 20px auto;
-}
-
-.order-form input,
-.order-form select,
-.order-form textarea {
-    width: 100%;
-    padding: 15px;
-    margin-bottom: 15px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    font-size: 16px;
-    font-family: 'Roboto', sans-serif;
-}
-
-.order-form button {
-    width: 100%;
-    padding: 15px;
-    background-color: #2e8b57;
-    color: #fff;
-    border: none;
-    border-radius: 30px;
-    font-size: 18px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.order-form button:hover {
-    background-color: #276749;
-}
-
-/* Sezione Chi Siamo */
-.chi-siamo {
-    padding: 60px 20px;
-    text-align: center;
-    /* Scambio del colore di sfondo */
-    background-color: #f9f9f9;
-}
-
-.chi-siamo h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
-    color: #2e8b57;
-}
-
-.chi-siamo p {
-    font-size: 20px;
-    max-width: 800px;
-    margin: 0 auto;
-    color: #666;
-    line-height: 1.8;
-}
-
-/* Sezione Testimonianze */
-.testimonianze {
-    padding: 60px 20px;
-    text-align: center;
-    /* Scambio del colore di sfondo */
-    background-color: #eaf4ea; /* Stesso colore dello sfondo generale */
-}
-
-.testimonianze h2 {
-    font-size: 36px;
-    margin-bottom: 40px;
-    color: #2e8b57;
-}
-
-.testimonianze-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.testimonianza {
-    flex: 1 1 300px;
-    margin: 20px;
-    font-style: italic;
-    max-width: 500px;
-}
-
-.testimonianza p {
-    font-size: 18px;
-    color: #666;
-}
-
-.testimonianza h4 {
-    margin-top: 10px;
-    font-weight: normal;
-    color: #333;
-}
-
-/* Sezione Contatti */
+/* Contatti */
 .contatti {
     padding: 60px 20px;
     text-align: center;
@@ -361,11 +219,10 @@ nav a:hover {
 .contatti h2 {
     font-size: 36px;
     margin-bottom: 20px;
-    color: #2e8b57;
 }
 
 .contatti p {
-    font-size: 20px;
+    font-size: 18px;
     margin-bottom: 10px;
     color: #666;
 }
@@ -383,7 +240,6 @@ nav a:hover {
     border: 1px solid #ddd;
     border-radius: 5px;
     font-size: 16px;
-    font-family: 'Roboto', sans-serif;
 }
 
 .contact-form button {
@@ -419,77 +275,25 @@ footer .social a {
     margin: 0 10px;
     color: #fff;
     font-size: 20px;
-    transition: color 0.3s;
 }
 
-footer .social a:hover {
-    color: #2e8b57;
-}
-
-/* Media Queries */
+/* Responsività */
 @media (max-width: 768px) {
-    .header-container {
-        flex-wrap: wrap;
-    }
-
-    .menu-toggle {
-        display: block;
-        cursor: pointer;
-        font-size: 24px;
-        color: #333;
-    }
-
-    nav ul {
+    .problema-soluzione .container {
         flex-direction: column;
-        align-items: flex-start;
-        background-color: #fff;
-        width: 100%;
-        position: absolute;
-        top: 70px;
-        left: -100%;
-        transition: left 0.3s;
-        padding: 0;
+    }
+
+    .problema-soluzione .testo, .problema-soluzione .immagini {
         margin: 0;
     }
 
-    nav ul.active {
-        left: 0;
+    .benefici-lista {
+        flex-direction: column;
     }
 
-    nav li {
-        width: 100%;
-        margin: 0;
-    }
-
-    nav a {
-        display: block;
-        width: 100%;
-        padding: 15px 20px;
-    }
-
-    .personalizzata .col-left,
-    .personalizzata .col-right {
-        flex: 1 1 100%;
-        padding: 0 20px;
-    }
-
-    .benefici-container,
-    .prodotti-container,
-    .testimonianze-container,
-    .personalizzata .row {
+    .prodotti-container {
         flex-direction: column;
         align-items: center;
     }
 }
 
-/* Animazioni (se le hai implementate nel tuo script.js) */
-.hidden {
-    opacity: 0;
-    transform: translateY(50px);
-    transition: all 0.5s ease-out;
-}
-
-.show {
-    opacity: 1;
-    transform: translateY(0);
-}
