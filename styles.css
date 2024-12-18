@@ -3,7 +3,7 @@ body {
     font-family: 'Roboto', sans-serif;
     color: #333;
     line-height: 1.6;
-    background-color: #eaf4ea; /* Verde chiaro naturale */
+    background-color: #eaf4ea; /* Verde chiaro */
 }
 
 h1, h2, h3 {
@@ -15,9 +15,52 @@ a {
     color: inherit;
 }
 
-/* Header / Hero */
+/* Header */
+header {
+    background-color: #eaf4ea;
+    padding: 20px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-left {
+    font-size: 28px;
+    font-weight: bold;
+    color: #2e8b57;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin-left: 20px;
+}
+
+nav a {
+    color: #333;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #2e8b57;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+/* Hero */
 .hero {
-    background-image: url('hero-image.jpg'); /* Immagine di sfondo */
+    background-image: url('hero-image.jpg');
     background-size: cover;
     background-position: center;
     padding: 100px 20px;
@@ -279,12 +322,47 @@ footer .social a {
 
 /* Responsività */
 @media (max-width: 768px) {
-    .problema-soluzione .container {
-        flex-direction: column;
+    .header-container {
+        flex-wrap: wrap;
     }
 
-    .problema-soluzione .testo, .problema-soluzione .immagini {
+    .menu-toggle {
+        display: block;
+        cursor: pointer;
+        font-size: 24px;
+        color: #333;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        background-color: #fff;
+        width: 100%;
+        position: absolute;
+        top: 70px;
+        left: -100%;
+        transition: left 0.3s;
+        padding: 0;
         margin: 0;
+    }
+
+    nav ul.active {
+        left: 0;
+    }
+
+    nav li {
+        width: 100%;
+        margin: 0;
+    }
+
+    nav a {
+        display: block;
+        width: 100%;
+        padding: 15px 20px;
+    }
+
+    .problema-soluzione .container {
+        flex-direction: column;
     }
 
     .benefici-lista {
