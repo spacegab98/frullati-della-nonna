@@ -72,7 +72,7 @@ nav a:hover {
     display: inline-block;
     padding: 20px;
     border-radius: 10px;
-    color: #fff; /* Titolo in bianco */
+    color: #fff;
 }
 
 .hero h1 {
@@ -87,7 +87,7 @@ nav a:hover {
     margin-bottom: 30px;
 }
 
-/* Bottone Generico */
+/* Bottone */
 .btn {
     background-color: #2e8b57;
     color: #fff;
@@ -179,7 +179,7 @@ nav a:hover {
     border-radius: 10px;
 }
 
-/* Benefici per Anziani */
+/* Benefici Anziani (con 3 motivazioni) */
 .benefici-anziani {
     background-color: #f0fff0; /* verde molto chiaro */
     padding: 60px 20px;
@@ -203,29 +203,29 @@ nav a:hover {
     color: #666;
 }
 
-.benefici-lista {
+.benefici-lista-3 {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     margin-bottom: 40px;
 }
 
-.beneficio {
+.benefici-lista-3 .beneficio {
     display: flex;
     align-items: flex-start;
-    margin: 10px 20px;
+    margin: 20px;
     font-size: 18px;
-    max-width: 300px;
+    max-width: 600px;
     text-align: left;
 }
 
-.beneficio i {
+.benefici-lista-3 .beneficio i {
     color: #2e8b57;
     margin-right: 10px;
     margin-top: 6px;
 }
 
-.beneficio p {
+.benefici-lista-3 .beneficio p {
     color: #666;
 }
 
@@ -443,8 +443,8 @@ footer .social a {
         flex-direction: column;
     }
 
-    .benefici-lista {
-        flex-direction: column;
+    .benefici-lista-3 {
+        margin-bottom: 40px;
     }
 
     .prodotti-container {
