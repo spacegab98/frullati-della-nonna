@@ -2,7 +2,7 @@
 <html lang="it">
 <head>
     <meta charset="UTF-8">
-    <title>Sapori Genuini - Il Sapore della Tradizione Italiana</title>
+    <title>Sapori Genuini - Il piacere della buona tavola, senza sforzi</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
@@ -13,101 +13,59 @@
 </head>
 <body>
 
-    <!-- Header con logo e menu di navigazione -->
-    <header>
-        <div class="header-container">
-            <h1 class="logo">Sapori Genuini</h1>
-            <nav>
-                <ul>
-                    <li><a href="#prodotti">Prodotti</a></li>
-                    <li><a href="#chi-siamo">Chi Siamo</a></li>
-                    <li><a href="#contatti">Contatti</a></li>
-                </ul>
-                <div class="menu-toggle">
-                    <i class="fas fa-bars"></i>
-                </div>
-            </nav>
+    <!-- Header / Hero -->
+    <header class="hero">
+        <div class="hero-text">
+            <h1>Il piacere della buona tavola, senza sforzi</h1>
+            <p>Scopri i nostri piatti vellutati e saporiti, ideali per chi ha difficoltà di masticazione o deglutizione.</p>
+            <a href="#prodotti" class="btn">Scopri i nostri prodotti</a>
         </div>
     </header>
 
-    <!-- Sezione Hero -->
-    <section class="hero">
-        <div class="hero-text">
-            <h2>Il Sapore della Tradizione Italiana, Senza Compromessi</h2>
-            <p>Gusta le tue ricette preferite in una nuova forma.</p>
-            <a href="#pensato-per-te" class="btn">Scopri di più</a>
-        </div>
-    </section>
-
-    <!-- Sezione Chi Siamo (ORA al posto di Perché Sceglierci) -->
-    <section id="chi-siamo" class="chi-siamo">
-        <h2>Chi Siamo</h2>
-        <p>
-            La nostra missione è portare il gusto autentico della cucina italiana a tutti, indipendentemente dalle sfide alimentari.
-            Con passione e dedizione, utilizziamo solo ingredienti locali e lavoriamo a stretto contatto con esperti nutrizionisti
-            per garantire pasti bilanciati e deliziosi.
-        </p>
-    </section>
-
-    <!-- Sezione Personalizzata (Pensato per te e Più di un frullato) -->
-    <section class="personalizzata">
+    <!-- Sezione Problema e Soluzione -->
+    <section class="problema-soluzione">
         <div class="container">
-            <!-- Prima Riga: Pensato per te -->
-            <div class="row">
-                <div class="col-left">
-                    <h2 id="pensato-per-te" class="grande-testo">Pensato per te</h2>
-                    <div class="riquadro">
-                        <p>
-                            I nostri prodotti sono pensati per quelle persone con difficoltà di masticazione o deglutizione che non mangiano più saporito come un tempo. Offriamo piatti genuini e studiati con nutrizionisti, senza bisogno di masticare e che coadiuvano la digestione.
-                        </p>
-                    </div>
-                </div>
-                <div class="col-right">
-                    <!-- Spazio per equilibrio visivo -->
-                </div>
+            <div class="testo">
+                <h2>Hai difficoltà a masticare o deglutire?</h2>
+                <p>Non rinunciare al gusto e al piacere del buon cibo! I nostri piatti vellutati sono creati appositamente per te.</p>
+                <ul>
+                    <li>Cibi facili da mangiare e digerire</li>
+                    <li>Preparati con ingredienti freschi e locali</li>
+                    <li>Gusto autentico della tradizione italiana</li>
+                </ul>
             </div>
-            <!-- Seconda Riga: Più di un frullato -->
-            <div class="row">
-                <div class="col-left">
-                    <!-- Spazio per equilibrio visivo -->
-                </div>
-                <div class="col-right">
-                    <h2 id="piu-di-un-frullato" class="grande-testo">Più di un frullato</h2>
-                    <div class="riquadro">
-                        <p>
-                            Ogni piatto è prodotto con cura artigianale, enfatizzando la ricetta tradizionale e integrando innovazione per rendere il piatto unico nel suo genere.
-                        </p>
-                    </div>
-                </div>
+            <div class="immagini">
+                <!-- Sostituisci "anziani.jpg" con l'immagine di anziani sorridenti che gustano il cibo -->
+                <img src="anziani.jpg" alt="Anziani sorridenti che gustano il cibo" class="img-responsive">
             </div>
         </div>
     </section>
 
-    <!-- Sezione Benefici (Perché Sceglierci) SPOSTATA DOPO Pensato per te e Più di un frullato -->
-    <section class="benefici">
-        <h2>Perché Sceglierci</h2>
-        <div class="benefici-container">
-            <div class="beneficio">
-                <i class="fas fa-utensils"></i>
-                <h3>Gusto Autentico</h3>
-                <p>
-                    I nostri piatti conservano i sapori autentici della cucina tradizionale italiana, permettendoti di rivivere le emozioni dei pasti in famiglia con ingredienti di prima qualità.
-                </p>
+    <!-- Sezione Benefici per Anziani -->
+    <section class="benefici-anziani">
+        <div class="container">
+            <h2>Perché i nostri piatti sono la scelta giusta per te</h2>
+            <div class="benefici-lista">
+                <div class="beneficio">
+                    <i class="fas fa-check-circle"></i>
+                    <p>Non richiedono masticazione</p>
+                </div>
+                <div class="beneficio">
+                    <i class="fas fa-check-circle"></i>
+                    <p>Facilità di digestione</p>
+                </div>
+                <div class="beneficio">
+                    <i class="fas fa-check-circle"></i>
+                    <p>Preparati al momento con ingredienti freschi</p>
+                </div>
+                <div class="beneficio">
+                    <i class="fas fa-check-circle"></i>
+                    <p>Consigliati da nutrizionisti e dietologi</p>
+                </div>
             </div>
-            <div class="beneficio">
-                <i class="fas fa-heartbeat"></i>
-                <h3>Nutrizione Bilanciata</h3>
-                <p>
-                    Lavoriamo a stretto contatto con nutrizionisti e dietologi per offrire pasti equilibrati, garantendo il giusto apporto di nutrienti essenziali per il tuo benessere.
-                </p>
-            </div>
-            <div class="beneficio">
-                <i class="fas fa-leaf"></i>
-                <h3>Ingredienti Locali</h3>
-                <p>
-                    Utilizziamo solo ingredienti freschi e locali, sostenendo i produttori del territorio e assicurando prodotti a chilometro zero di alta qualità.
-                </p>
-            </div>
+            <!-- Immagine di ingredienti freschi e anziano sorridente -->
+            <img src="ingredienti.jpg" alt="Ingredienti freschi" class="img-small">
+            <img src="anziano-sorriso.jpg" alt="Anziano che sorride davanti al piatto" class="img-small">
         </div>
     </section>
 
@@ -115,63 +73,29 @@
     <section id="prodotti" class="prodotti">
         <h2>I Nostri Prodotti</h2>
         <div class="prodotti-container">
-            <!-- Vellutata di Lasagna -->
+            <!-- Prodotto 1: Vellutata di Lasagna -->
             <div class="prodotto">
                 <img src="vellutata-lasagna.jpg" alt="Vellutata di Lasagna">
                 <h3>Vellutata di Lasagna</h3>
                 <p>
-                    Riscopri il sapore autentico della tradizione con la nostra Vellutata di Lasagna alla Bolognese. Immagina di gustare tutti gli strati ricchi e saporiti della classica lasagna italiana, trasformati in una vellutata cremosa che conserva intatti i gusti e gli aromi originali. Ideale per chi desidera assaporare un piatto la domenica a pranzo in compagnia della propria famiglia in una forma più accessibile, specialmente se si affrontano difficoltà di masticazione o deglutizione.
+                    Riscopri il sapore autentico della tradizione con la nostra Vellutata di Lasagna alla Bolognese. Immagina di gustare tutti gli strati ricchi e saporiti della classica lasagna italiana, trasformati in una vellutata cremosa che conserva intatti i gusti e gli aromi originali. Ideale per chi desidera assaporare un piatto la domenica a pranzo in compagnia della propria famiglia in una forma più accessibile.
                 </p>
-                <a href="#ordine" class="btn">Ordina Ora</a>
+                <a href="#contatti" class="btn">Ordina Ora</a>
             </div>
 
-            <!-- Vellutata di Scaloppine -->
+            <!-- Prodotto 2: Vellutata di Scaloppine -->
             <div class="prodotto">
                 <img src="vellutata-scaloppine.jpg" alt="Vellutata di Scaloppine con Funghi e Patate">
                 <h3>Vellutata di Scaloppine con Funghi e Patate</h3>
                 <p>
                     Questo piatto unico combina la tenerezza del vitello con il sapore intenso dei funghi porcini e la delicatezza delle patate, trasformati in una vellutata cremosa. Ideale per chi desidera assaporare i classici della cucina italiana in una forma più accessibile, soprattutto se si hanno difficoltà di masticazione o deglutizione.
                 </p>
-                <a href="#ordine" class="btn">Ordina Ora</a>
+                <a href="#contatti" class="btn">Ordina Ora</a>
             </div>
         </div>
     </section>
 
-    <!-- Sezione Ordine -->
-    <section id="ordine" class="ordine">
-        <h2>Ordina il Tuo Pasto</h2>
-        <p>Compila il modulo sottostante per inviare un'email o chiamaci direttamente per prenotare il tuo pasto fresco e genuino.</p>
-        <form action="mailto:fem.clienti@gmail.com" method="post" enctype="text/plain" class="order-form">
-            <input type="text" name="nome" placeholder="Il tuo nome" required>
-            <input type="email" name="email" placeholder="La tua email" required>
-            <input type="tel" name="telefono" placeholder="Il tuo numero di telefono" required>
-            <select name="prodotto" required>
-                <option value="">Seleziona il prodotto</option>
-                <option value="Vellutata di Lasagna">Vellutata di Lasagna</option>
-                <option value="Vellutata di Scaloppine">Vellutata di Scaloppine con Funghi e Patate</option>
-            </select>
-            <textarea name="messaggio" placeholder="Note aggiuntive"></textarea>
-            <button type="submit" class="btn">Invia Ordine via Email</button>
-        </form>
-        <p>Oppure chiamaci al <a href="tel:+393510304108">351 030 4108</a> per effettuare l'ordine telefonicamente.</p>
-    </section>
-
-    <!-- Sezione Testimonianze -->
-    <section class="testimonianze">
-        <h2>Cosa Dicono di Noi</h2>
-        <div class="testimonianze-container">
-            <div class="testimonianza">
-                <p>"Un'esperienza culinaria straordinaria che mi ha permesso di rivivere i sapori di un tempo."</p>
-                <h4>- Maria, 68 anni</h4>
-            </div>
-            <div class="testimonianza">
-                <p>"Finalmente posso gustare una lasagna senza alcuna difficoltà. Grazie per aver reso possibile tutto ciò!"</p>
-                <h4>- Giovanni, 75 anni</h4>
-            </div>
-        </div>
-    </section>
-
-    <!-- Sezione Contatti -->
+    <!-- Sezione Contatti (per ordinare e richiedere informazioni) -->
     <section id="contatti" class="contatti">
         <h2>Contattaci</h2>
         <p>Telefono: <a href="tel:+393510304108">351 030 4108</a></p>
@@ -184,7 +108,6 @@
         </form>
     </section>
 
-    <!-- Footer -->
     <footer>
         <p>&copy; 2023 Sapori Genuini. Tutti i diritti riservati.</p>
         <div class="social">
@@ -192,7 +115,7 @@
         </div>
     </footer>
 
-    <!-- Inclusione del file JavaScript -->
     <script src="script.js"></script>
 </body>
 </html>
+
